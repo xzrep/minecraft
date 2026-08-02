@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Факти про Minecraft</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(#87CEEB,#4CAF50);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    width:700px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+h1{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    margin:10px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#2e7d32;
+    transform:scale(1.05);
+}
+
+#fact{
+    margin-top:25px;
+    padding:20px;
+    background:#f3f3f3;
+    border-radius:10px;
+    font-size:20px;
+    min-height:100px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>⛏️ Цікаві факти про Minecraft</h1>
+
+<button onclick="showFact(0)">Факт 1</button>
+<button onclick="showFact(1)">Факт 2</button>
+<button onclick="showFact(2)">Факт 3</button>
+<button onclick="showFact(3)">Факт 4</button>
+<button onclick="showFact(4)">Факт 5</button>
+
+<div id="fact">
+Натисни кнопку, щоб побачити факт про Minecraft.
+</div>
+
+</div>
+
+<script>
+
+const facts = [
+"🎮 Minecraft створив Маркус Перссон (Notch), а гра офіційно вийшла у 2011 році.",
+"🌍 Світ Minecraft майже безмежний і генерується випадковим чином.",
+"🐉 Головний бос гри — Дракон Краю (Ender Dragon).",
+"💎 Алмази є одним із найцінніших ресурсів у грі.",
+"🏗️ У творчому режимі можна будувати без обмежень і без потреби збирати ресурси."
+];
+
+function showFact(index){
+    document.getElementById("fact").innerHTML = facts[index];
+}
+
+</script>
+
+</body>
+</html>
