@@ -1,100 +1,154 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Факти про Minecraft</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Minecraft World</title>
+    <link rel="stylesheet" href="./index.css">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:linear-gradient(#87CEEB,#4CAF50);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.container{
-    background:white;
-    width:700px;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 20px rgba(0,0,0,.3);
-}
-
-h1{
-    color:#2e7d32;
-    margin-bottom:20px;
-}
-
-button{
-    background:#4CAF50;
-    color:white;
-    border:none;
-    padding:15px 25px;
-    margin:10px;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:18px;
-    transition:.3s;
-}
-
-button:hover{
-    background:#2e7d32;
-    transform:scale(1.05);
-}
-
-#fact{
-    margin-top:25px;
-    padding:20px;
-    background:#f3f3f3;
-    border-radius:10px;
-    font-size:20px;
-    min-height:100px;
-}
-</style>
 </head>
+
 <body>
 
-<div class="container">
+    <header>
+        <h1> MINECRAFT WORLD</h1>
+        <p> Роби ламай і будуй 
 
-<h1>⛏️ Цікаві факти про Minecraft</h1>
+        <nav>
+            <a href="./catalog.html"> Скіни</a>
+            <a href="#facts"> Факти</a>
+            <a href="#photos"> Фото</a>
+            <a href="#information">ℹ Інформація</a>
+        </nav>
+    </header>
 
-<button onclick="showFact(0)">Факт 1</button>
-<button onclick="showFact(1)">Факт 2</button>
-<button onclick="showFact(2)">Факт 3</button>
-<button onclick="showFact(3)">Факт 4</button>
-<button onclick="showFact(4)">Факт 5</button>
+    <main>
 
-<div id="fact">
-Натисни кнопку, щоб побачити факт про Minecraft.
-</div>
+        <section class="container" id="facts">
 
-</div>
+            <h2 class="title"> Цікаві факти про Minecraft</h2>
 
-<script>
+            <div class="fact-buttons">
+                <button onclick="showFact(0)">Факт 1</button>
+                <button onclick="showFact(1)">Факт 2</button>
+                <button onclick="showFact(2)">Факт 3</button>
+                <button onclick="showFact(3)">Факт 4</button>
+                <button onclick="showFact(4)">Факт 5</button>
+            </div>
 
-const facts = [
-"🎮 Minecraft створив Маркус Перссон (Notch), а гра офіційно вийшла у 2011 році.",
-"🌍 Світ Minecraft майже безмежний і генерується випадковим чином.",
-"🐉 Головний бос гри — Дракон Краю (Ender Dragon).",
-"💎 Алмази є одним із найцінніших ресурсів у грі.",
-"🏗️ У творчому режимі можна будувати без обмежень і без потреби збирати ресурси."
-];
+            <div id="fact">
+                Натисни кнопку, щоб побачити факт про Minecraft.
+            </div>
 
-function showFact(index){
-    document.getElementById("fact").innerHTML = facts[index];
-}
+            <button class="info-button" onclick="showInformation()">
+                Перейти до інформації
+            </button>
 
-</script>
+            <div id="information">
+
+                <h2> Інформація про Minecraft</h2>
+
+                <p>
+                    <b>Minecraft</b> — це <b>одна з найпопулярніших
+                        відеоігор у жанрі пісочниці </b> в історії
+                    створена Маркусом Перссоном  та розроблена
+                    студією
+                    <a href="https://www.minecraft.net/" target="_blank">
+                        <b>Mojang Studios</b>
+                    </a>.
+                    Гра надає гравцям повну свободу дій у тривимірному
+                    процедурно згенерованому світі, що складається
+                    з кубічних блоків
+                </p>
+
+                <h2> Основні режими гри</h2>
+
+                <ul>
+                    <li>
+                        <b>Виживання </b>
+                        добування ресурсів будівництво житла
+                        створення інструментів та боротьба з мобами
+                    </li>
+
+                    <li>
+                        <b>Творчість </b>
+                        безкінечні ресурси можливість літати
+                        та вільне будівництво
+                    </li>
+
+                    <li>
+                        <b>Хардкор </b>
+                        дуже складний режим із одним життям
+                    </li>
+
+                    <li>
+                        <b>Пригода </b>
+                        режим для проходження користувацьких карт
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </section>
+
+        <section class="photos" id="photos">
+
+            <h2> Світ Minecraft</h2>
+
+            <div class="photo-container">
+
+                <div class="photo-card">
+                    <img src="https://static.planetminecraft.com/files/resource_media/screenshot/1839/2018-09-26-17-27-41-1538009039_thumb.jpg"
+                        alt="Minecraft ліс">
+                    <h3> Ліс і гори</h3>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://www.alphr.com/wp-content/uploads/2022/12/castle-4.png" alt="Minecraft замок">
+                    <h3> Великий замок</h3>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://media.indiedb.com/images/games/1/13/12771/OQXAR.jpg" alt="Minecraft Незер">
+                    <h3> Незер</h3>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <br>
+        Створено для фанатів Minecraft
+    </footer>
+
+    <script>
+        const facts = [
+            " Minecraft створив Маркус Перссон  а гра офіційно вийшла у 2011 році",
+            " Світ Minecraft майже безмежний і генерується випадковим чином",
+            " Головний бос гри — Дракон Краю ",
+            " Алмази є одним із найцінніших ресурсів у грі",
+            " У творчому режимі можна будувати без обмежень"
+        ];
+
+        function showFact(index) {
+            document.getElementById("fact").textContent = facts[index];
+        }
+
+        function showInformation() {
+            const block = document.getElementById("information");
+            block.style.display = "block";
+            block.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    </script>
 
 </body>
+
 </html>
