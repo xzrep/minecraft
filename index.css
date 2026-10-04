@@ -274,3 +274,16 @@ footer{
     button{width:90%}
     .title{font-size:27px}
 }
+
+.photo-container a{
+    text-decoration: none;
+}
+
+h3{
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+    
+}
